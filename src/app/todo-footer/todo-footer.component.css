@@ -1,0 +1,23 @@
+.foot{
+  height: auto;
+  width: auto;
+  background-color: #053742;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  margin-right: 20px;
+  padding: 20px;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  bottom:0;
+}
+ .foot footer{
+    align-items: center;
+    width: 100%;
+    color: white;
+}
+h3,h2 {
+  font-family: Poppins;
+  text-align: center;
+}
