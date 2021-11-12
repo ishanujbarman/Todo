@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { TaskService } from '../task.service';
 
 @Component({
-  selector: 'app-todo-list',
-  templateUrl: './todo-list.component.html',
-  styleUrls: ['./todo-list.component.css']
+  selector: 'app-todo-table',
+  templateUrl: './todo-table.component.html',
+  styleUrls: ['./todo-table.component.css']
 })
-export class TodoListComponent implements OnInit {
+export class TodoTableComponent implements OnInit {
 
   tasks : any = [];
 
@@ -15,5 +15,4 @@ export class TodoListComponent implements OnInit {
   ngOnInit(): void {
     this.tasks = this.taskinfo.getTasks();
   }
-
-}
+  }

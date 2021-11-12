@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TaskService } from '../task.service';
 
 @Component({
   selector: 'app-todo-footer',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TodoFooterComponent implements OnInit {
 
-  constructor() { }
+  number :any;
+
+  constructor(private taskNumber:TaskService) { }
 
   ngOnInit(): void {
+    this.number = this.taskNumber.getNumber();
   }
 
 }
