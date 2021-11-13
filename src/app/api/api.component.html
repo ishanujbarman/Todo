@@ -1,0 +1,26 @@
+
+<div>
+  <h2>Spacex API Details</h2>
+  <table>
+    <tr>
+      <th>Mission Name</th>
+      <th>Mission ID</th>
+      <th>Manufacturers</th>
+      <th>Payload IDs</th>
+      <th>Wikipedia</th>
+      <th>Website</th>
+      <th>Twitter</th>
+      <th>Description</th>
+    </tr>
+    <tr *ngFor="let d of data">
+      <td>{{d.mission_name}}</td>
+      <td>{{d.mission_id}}</td>
+      <td>{{d.manufacturers}}</td>
+      <td>{{d.payload_ids}}</td>
+      <td>{{d.wikipedia}}</td>
+      <td>{{d.website}}</td>
+      <td>{{d.twitter}}</td>
+      <td>{{d.description}}</td>
+    </tr>
+  </table>
+</div>

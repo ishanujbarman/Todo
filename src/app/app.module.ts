@@ -9,6 +9,8 @@ import { TodoFooterComponent } from './todo-footer/todo-footer.component';
 import { TodoTableComponent } from './todo-table/todo-table.component';
 import { TaskService } from './task.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ApiComponent } from './api/api.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -17,12 +19,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     TodoInputComponent,
     TodoListComponent,
     TodoFooterComponent,
-    TodoTableComponent
+    TodoTableComponent,
+    ApiComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule
   ],
   providers: [TaskService],
   bootstrap: [AppComponent]
